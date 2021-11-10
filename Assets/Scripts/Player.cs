@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
         _playerRB = GetComponent<Rigidbody2D>(); 
     }
 
-    // Update is called once per frame
     void Update()
     {
         _directionMove = Input.GetAxisRaw("Horizontal") * movementSpeed;
@@ -21,8 +20,8 @@ public class Player : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Vector2 velosity = _playerRB.velocity;
-        velosity.x = _directionMove;
-        _playerRB.velocity = velosity;
+        Vector2 velocity = _playerRB.velocity;
+        velocity.x = _directionMove;
+        _playerRB.velocity = velocity;
     }
 }
