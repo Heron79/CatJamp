@@ -13,6 +13,7 @@ public class Platform : MonoBehaviour
             if (playerRb != null)
             {
                 playerRb.velocity = Vector2.up * jumpForce;
+                Destroy(gameObject, 5f);
             }
         }
     }
