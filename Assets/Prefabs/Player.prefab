@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6936871329005398284}
   - component: {fileID: -1451459489261456591}
   m_Layer: 0
-  m_Name: RoboCreep_0
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
