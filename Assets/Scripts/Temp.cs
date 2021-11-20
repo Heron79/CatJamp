@@ -9,10 +9,10 @@ public class Temp : MonoBehaviour
     { 
         for(int i = 0; i <= 20; i+=5)
         {
-            Debug.LogWarning(i);
+            Debug.Log(i);
             
         }
-        Debug.LogError("Об'єкт буде вилучено через 4 секунди!");
+        Debug.Log("Об'єкт буде вилучено через 4 секунди!");
         Destroy(gameObject, 4f);
     }
 
