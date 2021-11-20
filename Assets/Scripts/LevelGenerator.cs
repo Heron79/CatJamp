@@ -7,13 +7,13 @@ public class LevelGenerator : MonoBehaviour
     public int numberOfPlatform;
     public float minY ;
     public float maxY ;
-    public GameObject platformPrefab;
+    public GameObject[] platformPrefab;
     public float levelWidth;
     public Vector3 _spawnPosition ;
     void Start()
     {
 
-        SpawnPlatform(platformPrefab, _spawnPosition, numberOfPlatform, 5);
+        SpawnPlatform(platformPrefab[1], _spawnPosition, numberOfPlatform, 5);
 
     }
     private void SpawnPlatform(GameObject prefab, Vector3 startPos,int numberOfObject,int frequence)
@@ -29,7 +29,8 @@ public class LevelGenerator : MonoBehaviour
 
                 Instantiate(prefab, startPos, Quaternion.identity);
                 numberOfObject--;
-            }
+                Debug.LogError("Платформа № "+i);
+            } 
         }
     }
 

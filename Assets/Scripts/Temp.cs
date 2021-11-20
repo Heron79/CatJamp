@@ -6,9 +6,10 @@ public class Temp : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
-    { for(int i = 1; i <= 20; i += 2)
+    { 
+        for(int i = 0; i <= 20; i+=5)
         {
-            Debug.LogError(i);
+            Debug.LogWarning(i);
             
         }
         Debug.LogError("Об'єкт буде вилучено через 4 секунди!");

@@ -17,7 +17,7 @@ public class CameraMove : MonoBehaviour
 void Update()
 {
 
-        if(_target.position.y> gameObject.transform.position.y)
+        if(_target.position.y > gameObject.transform.position.y)
         {
             Vector3 newPos = new Vector3(transform.position.x, _target.position.y, transform.position.z);
             gameObject.transform.position = Vector3.Lerp(transform.position, newPos, speed);
